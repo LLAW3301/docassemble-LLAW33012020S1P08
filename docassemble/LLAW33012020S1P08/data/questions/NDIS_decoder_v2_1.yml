@@ -1,0 +1,80 @@
+---
+include:
+  - NDIS_data_structure_1.yml
+---
+# explains how the app works
+# disclaimer page
+mandatory: True
+question: Welcome to the interview!
+subquestion: |
+  This guided interview is intended to assist you to better understand your NDIS funding plan. Your answers will create a customised document which can assist you to better understand your plan.
+  
+  The content provided is for information purposes only. No claim is made as to the accuracy of the content of the information.
+  
+  The user should always refer back to the NDIS or contact the Royal Society for the Blind for further information.
+  
+  No responsibility is taken for any information or services that appear on any linked websites.
+
+  To get started, press **Continue**.
+under: |
+  **NOTE:** information is **current as at July 2020.**
+buttons:
+  - Continue: continue
+---
+
+---
+# Driving the data collection
+mandatory: True
+code: |
+  for MJFitem in category_list:
+    if MJFitem['wants_information']:
+      for MJFsubcategory in MJFitem['subcategories']:
+        MJFsubcategory['display_in_document']
+---    
+question: |
+  Support Purpose: ${ category_list[i]['category_name'] }
+subquestion: |
+  ${ category_list[i]['category_description'] }
+  
+  Do you want more information about this category?
+yesno: category_list[i]['wants_information']
+---
+question: |
+  Support Category: ${ category_list[i]['subcategories'][j]['subcat_name'] }
+subquestion: |
+  ${ category_list[i]['subcategories'][j]['subcat_description'] }
+  
+  Do you want to add this to your document?
+yesno: category_list[i]['subcategories'][j]['display_in_document']
+---
+question: |
+  Assistive Technology: ${ category_list[i]['subcat_nextsteps'][k]['subcat_AT'] }
+subquestion: |
+  ${ category_list[i]['subcat_nextsteps'][k]['subcat_AT_description'] }
+  
+  Do you want to add this to your document?
+yesno: category_list[i]['subcat_nextsteps'][k]['display_AT_in_document']
+---
+# summary of information
+# additional information available in pdf document
+mandatory: True
+question: Summary of information
+subquestion: |
+  Support|Information requested
+  ---|---
+  % for MJFitem in category_list:
+  % if MJFitem['wants_information']:
+  ${ MJFitem['category_name'] } | ${ MJFitem['wants_information'] }
+  % for MJFsubcategory in MJFitem['subcategories']:
+  ${ MJFsubcategory['subcat_name']} | ${MJFsubcategory['display_in_document']}
+  % endfor
+  % endif
+  % endfor
+  
+  add in pdf document***
+
+buttons:
+  - Exit: exit
+    url: https://www.rsb.org.au/
+  - Restart: restart
+---
