@@ -1,0 +1,33 @@
+---
+variable name: category_list
+use objects: True
+data:
+  - category_name: Core Capacity
+    category_description: ${ core_capacity_description }
+    subcategories:
+      - subcat_name: Something
+        subcat_description: A descripttion about the subcategory
+        subcat_nextsteps:  Description about next steps
+      - subcat_name: Another one
+        subcat_description: Another description
+        subcat_nextsteps: NS2
+  - category_name: Capital
+    category_description: Description 2
+    subcategories:
+      - subcat_name: Something 2
+        subcat_description: Description 2
+        subcat_nextsteps: Nextsteps2
+  - category_name: Capacity Building
+    category_description: Description 3
+    subcategories:
+      - subcat_name: Something 3
+        subcat_description: Description 3
+        subcat_nextsteps: Nextsteps3
+---
+template: core_capacity_description
+content: |
+  ### CORE SUPPORTS
+ 
+  Supports that help you with day to day life.
+  **Core support categories include:** Assistance with daily life, Transport, Consumables, Assistance with social and community participation
+---
