@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.LLAW33012020S1P08',
       version='0.0.1',
       description=('A docassemble extension.'),
-      long_description='# Package P08',
+      long_description='# Package P08\r\n\r\n# most recent update 26/05/20',
       long_description_content_type='text/markdown',
       author='Linda Tran',
       author_email='tran0380@flinders.edu.au',
