@@ -48,9 +48,9 @@ subquestion: |
 yesno: category_list[i]['subcategories'][j]['display_in_document']
 ---
 question: |
-  Assistive Technology: ${ category_list[i]['subcat_nextsteps'][k]['subcat_AT'] }
+  Assistive Technology: ${ category_list[i]['subcategories'][j]['subcat_nextsteps'][k]['subcat_AT'] }
 subquestion: |
-  ${ category_list[i]['subcat_nextsteps'][k]['subcat_AT_description'] }
+  ${ category_list[i]['subcategories'][j]['subcat_nextsteps'][k]['subcat_AT_description'] }
   
   Do you want to add this to your document?
 yesno: category_list[i]['subcat_nextsteps'][k]['display_AT_in_document']
@@ -73,6 +73,8 @@ subquestion: |
   
   add in pdf document***
 
+attachment:
+  docx template file: test__jinja.docx
 buttons:
   - Exit: exit
     url: https://www.rsb.org.au/

@@ -1,0 +1,146 @@
+---
+variable name: category_list
+use objects: True
+data:
+  - category_name: Core Support
+    category_description: ${ core_support_description }
+    subcategories:
+      - subcat_name: Assistance with daily life
+        subcat_description: ${ core_daily_life }
+      - subcat_name: Transport
+        subcat_description: ${ core_transport }
+      - subcat_name: Consumables
+        subcat_description: ${ core_consumables }
+      - subcat_name: Assistance with social and community participation
+        subcat_description: ${ core_social_participation }
+  - category_name: Capital Support
+    category_description: ${ capital_support_description }
+    subcategories:
+      - subcat_name: Home modifications
+        subcat_description: Description 2
+        subcat_nextsteps: Nextsteps2
+      - subcat_name: Assistive Technology
+        subcat_description: AT description
+        subcat_nextsteps:
+          - AT_level: Level 1 AT
+            AT_description: Description for lvl 1 AT funding
+  - category_name: Capacity Building
+    category_description: ${ capacity_building_description }
+    subcategories:
+      - subcat_name: Something 3
+        subcat_description: Description 3
+        subcat_nextsteps: Nextsteps3
+---
+# Support purpose 1 of 3
+# CORE SUPPORT broken down into 4 support categories
+template: core_support_description
+content: |
+  Supports that help you with day to day life.
+  
+  INFO about how your funding can be spent here. - bulk can be used in any area?
+  
+  **Core support categories include:** Assistance with daily life, Transport, Consumables, Assistance with social and community participation
+---
+# support purpose 2 of 3
+# CAPITAL SUPPORT broken down into 2 support categories
+template: capital_support_description
+content: |
+  Investment funding for higher-cost pieces of assistive technology, equipment, home or vehicle modifications, or for Specialist Disability Accommodation (SDA).
+    
+    Funding under Capital is specific (I think).
+    
+    **Capital support categories include:** Home modifications and Assistive Technology
+---
+# support purpose 3 of 3
+# CAPACITY BUILDING broken down into 8 support categories 
+template: capacity_building_description
+content: |
+  Funding to help build your independence and skills to help you reach your long-term goals.
+  
+    **Capacity building support categories include:** Coordination of supports, Improved living arrangements, Increased social and community participation, Job Assistance, Improved relationships, health and wellbeing, learning, life choices and daily living.
+---
+# CORE SUPPORT - support category 1 - Assistance with Daily Life
+template: core_daily_life
+content: |
+  Funding to assist you in your daily personal activities and supports to help you live more independently. For example:
+  
+  - Assistance with daily activities (e.g. showering, personal hygiene and moving around the house)
+  - Assistance with household tasks to help maintain your home environment (e.g. cleaning)
+  - Preparation and delivery of meals if you are unable to do this yourself
+  - Assistance to support shared living arrangements
+  - Short term accommodation and assistance (e.g., respite)
+  - Medium term accommodation and assistance (e.g., transitional accommodation before moving into a more permanent home)
+---
+# CORE SUPPORT - support category 2 - Transport
+template: core_transport
+content: |
+  Funding to help you get around and access supports in the community. For example:
+  
+  - funds for a worker to accompany a participant for community access
+  - cost of the transport itself, including access to public transport, road tolls, parking fees and running costs of the vehicle
+---
+# CORE SUPPORT - support category 3 - Consumables
+template: core_consumables
+content: |
+  INFO
+---
+# CORE SUPPORT - support category 4 - Assistance with social and community participation
+template: core_social_participation
+content: |
+  INFO
+---
+# CAPITAL SUPPORT - support category 5 - Home modification
+template: capital_home
+content: |
+  INFO
+---
+# CAPITAL SUPPORT - support category 6 - Assistive Technology
+template: capital_AT
+content: |
+  INFO
+---
+# CAPACITY SUPPORT - support category 7 - 
+template: capacity_
+content: |
+  INFO
+---
+# CAPACITY SUPPORT - support category 8 - 
+template: capacity_
+content: |
+  INFO
+---
+# CAPACITY SUPPORT - support category 9 - 
+template: capacity_
+content: |
+  INFO
+---
+# CAPACITY SUPPORT - support category 10 - 
+template: capacity_
+content: |
+  INFO
+---
+# CAPACITY SUPPORT - support category 11 - 
+template: capacity_
+content: |
+  INFO
+---
+# CAPACITY SUPPORT - support category 12 - 
+template: capacity_
+content: |
+  INFO
+---
+# CAPACITY SUPPORT - support category 13 - 
+template: capacity_
+content: |
+  INFO
+---
+# CAPACITY SUPPORT - support category 14 - 
+template: capacity_
+content: |
+  INFO
+---
+# CAPACITY SUPPORT - support category 15 - 
+template: capacity_
+content: |
+  INFO
+---
