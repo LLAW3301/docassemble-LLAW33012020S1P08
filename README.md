@@ -1,3 +1,1 @@
-# Package P08
-
-# most recent update 27/05/20
+# The application is designed to give NDIS participants a better idea about what they can spend their funding on. It goes through each support purpose and each support category for those support purposes, summarising what participants can use their funding for and asks the user whether or not they would like more information. If the user selects 'YES', additional information is added to a document that is produced at the end.

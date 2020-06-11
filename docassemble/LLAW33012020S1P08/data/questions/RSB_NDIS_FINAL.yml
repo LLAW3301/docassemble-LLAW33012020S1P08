@@ -5,11 +5,19 @@ metadata:
   authors:
     - names: "Linda Tran, Oriana De'Angelis, Olivia Harnett, Karim Morgan"
       organization: Flinders University
+  show login: false
 ---
 features:
+  css: RSB_NDIS.css
   debug: false
   hide standard menu: true
-  css: C4_01_lnf_with_comments.css
+---
+objects:
+  - RSBlogo: DAStaticFile.using(filename='RSBlogo.png')
+---
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + RSBlogo.url_for() + '" style="height: 75px;">')
 ---
 # Modify the post default screen part to attribute work to Flinders and your client
 # Remember to replace XXXX with your client's name.

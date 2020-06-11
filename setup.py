@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.LLAW33012020S1P08',
       version='0.0.1',
       description=('A docassemble extension.'),
-      long_description='# Package P08\r\n\r\n# most recent update 27/05/20',
+      long_description="# The application is designed to give NDIS participants a better idea about what they can spend their funding on. It goes through each support purpose and each support category for those support purposes, summarising what participants can use their funding for and asks the user whether or not they would like more information. If the user selects 'YES', additional information is added to a document that is produced at the end.",
       long_description_content_type='text/markdown',
       author='Linda Tran',
       author_email='tran0380@flinders.edu.au',
